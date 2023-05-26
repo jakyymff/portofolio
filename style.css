@@ -1,34 +1,259 @@
 *,
 *::before,
 *::after {
-    padding: 0; margin: 0;
-    box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
 }
 
 html {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    line-height: 1.75;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      color: hsl(200, 20, 20%);
+      line-height: 1.75;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+      width: 100%;
+      height: 100%;
+      background-color: #fcfefd;
+}
+
+a {
+      text-decoration: none;
+      color: inherit;
+}
+
+input,
+button,
+textarea {
+      font-family: inherit;
+      font-size: inherit;
+      line-height: 1;
+      color: inherit;
+      border: none;
+      outline: none;
+      background-color: transparent;
+}
+
+button {
+      user-select: none;
+      cursor: pointer;
 }
 
 .intro {
-    width: 100vw;
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    background: linear-gradient(246.83deg, #352F2F 32.07%, rgba(255, 255, 255, 0) 219.66%);
+      color: #fff;
+      width: 100%;
+      height: 100vh;
+      padding: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8%;
+      background: linear-gradient(246.83deg, #1f1e26 32.07%, #35313c 219.66%);
 }
 
-.intro-heading {
-    font-size: 3rem;
-    line-height: 4rem;
-    margin-bottom: 20px;
+.intro-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
 }
+
+.intro-title {
+      font-size: 3.8rem;
+      line-height: 1.3em;
+      margin-bottom: 0.5em;
+}
+
+.intro-copy {
+      font-size: 1.2rem;
+}
+
+.intro-cta {
+      width: fit-content;
+      padding: 10px 20px;
+      margin-top: auto;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 0.8em;
+      background: #f1214b;
+      ;
+}
+
+.intro-image {
+      width: 28%;
+      height: auto;
+}
+
+.about {
+      width: 100%;
+      height: 100%;
+      padding: 100px;
+      gap: 100px;
+      display: flex;
+      flex-direction: column;
+}
+
+.about-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 0.7em;
+}
+
+.about-card {
+      width: 100%;
+      display: flex;
+      gap: 100px;
+}
+
+.about-card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+}
+
+.about-card-title {
+      font-size: 4rem;
+      line-height: 1.5;
+}
+
+.about-card-desc {
+      font-size: 1.6rem;
+}
+
+.project {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      background: linear-gradient(246.83deg, #1f1e26 32.07%, #35313c 219.66%);
+}
+
+.project-head {
+      width: 100%;
+      padding: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.project-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 0.7em;
+}
+
+.project-nav {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+}
+
+.project-nav-item {
+      line-height: 0;
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      user-select: none;
+      cursor: pointer;
+      color: #1f1e26;
+      background-color: #fff;
+}
+
+.project-nav-item-prev .feather {
+      margin-right: 2px;
+}
+
+.project-nav-item-next .feather {
+      margin-left: 2px;
+}
+
+.swiper {
+      width: 100%;
+      height: 90vh;
+}
+
+.swiper-slide {
+      position: relative;
+      width: 100%;
+      height: 100%;
+}
+
+.swiper-slide-content {
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 60px;
+      gap: 60px;
+      display: flex;
+      opacity: 0.5;
+}
+
+.swiper-slide-content-title {
+      font-weight: 300;
+      letter-spacing: 0.2em;
+}
+
+.swiper-slide-content-text {
+      font-weight: 500;
+      font-size: 1.6rem;
+}
+
+.swiper-slide-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+}
+
+.footer {
+      color: #fff;
+      width: 100%;
+      padding: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 100px;
+      background: linear-gradient(246.83deg, #1f1e26 32.07%, #35313c 219.66%);
+}
+
+.footer-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+}
+
+.footer-message {
+      font-size: 3.4rem;
+      line-height: 1;
+}
+
+.footer-name { }
+
+.footer-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+}
+
+.footer-link-title { }
+
+.footer-link-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+}
+
+.footer-link-item {
+
+}
+
+/* .footer-email {
+      text-decoration: underline;
+} */
